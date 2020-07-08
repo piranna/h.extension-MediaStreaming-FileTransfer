@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">helios-mediastreaming FileTransfer</string>
+
+    <string name="TUS_URL">https://builder.helios-social.eu/files/</string>
+    <string name="upload_button">Upload</string>
+    <string name="pause_button">Pause</string>
+    <string name="resume_button">Resume</string>
+    <string name="title_label">File uploading test for tus.io</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
