@@ -1,5 +1,5 @@
 # MediaStreaming - FileTransfer
-  
+
 Repository for the FileTransfer of Media Streaming Module (T3.3).
 
 ### File Transfer:
@@ -11,8 +11,32 @@ All these values can be modified in the `values/strings.xml` file.
 
 ### How to use File Transfer:
 ```
-        Intent fileTransferIntent = new Intent(MainActivity.this, FileTransferActivity.class);
-        MainActivity.this.startActivity(fileTransferIntent);
+    Intent fileTransferIntent = new Intent(MainActivity.this, FileTransferActivity.class);
+    MainActivity.this.startActivity(fileTransferIntent);
+```
+
+When the activity finish, return the uploaded file URL to the mainly activity that called to file transfer. An usage example:
+
+```
+    private static final int FILE_TRANSFER_ACTIVITY_REQUEST_CODE = 1;
+
+...
+
+    Intent fileTransferIntent = new Intent(MainActivity.this, FileTransferActivity.class);
+    MainActivity.this.startActivityForResult(fileTransferIntent, FILE_TRANSFER_ACTIVITY_REQUEST_CODE);
+
+...
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == FILE_TRANSFER_ACTIVITY_REQUEST_CODE) {
+            if(resultCode == Activity.RESULT_OK){
+===>            data.getStringExtra("uploadURL");
+            } else if (resultCode == Activity.RESULT_CANCELED) {}
+        }
+    }
 ```
 
 ### Request permissions
@@ -87,6 +111,6 @@ To request Jenkins username and password, contact with: `carlosalberto.martinedo
 To use the dependency in `build.gradle` of the "father" project, you should specify the last version available in Nexus, related to the last Jenkins's deploy.
 For example, to declare the dependency on the filetransfer module and the respective version:
 
-`implementation 'eu.h2020.helios_social.modules.filetransfer:filetransfer:1.0.5'`
+`implementation 'eu.h2020.helios_social.modules.filetransfer:filetransfer:1.0.10'`
 
 For more info review: `https://scm.atosresearch.eu/ari/helios_group/generic-issues/blob/master/multiprojectDependencies.md`
