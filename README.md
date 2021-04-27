@@ -4,7 +4,7 @@ Repository for the FileTransfer of Media Streaming Module (T3.3).
 
 ## Short Intro to the funcionality
 
-Nowadays, on internet, users are sharing more and more multimedia contents such as photos, videos and finles every day.
+Nowadays, on internet, users are sharing more and more multimedia contents such as photos, videos and files every day.
 
 However, connectivity networks remain fragile. Platform APIs are also often a mess and every project builds its own file uploader.
 
@@ -28,7 +28,7 @@ It offers simple, cheap and reusable stacks for clients and servers. It supports
 Here instructions to install the Tus server. 
 
 
-<p><b> The Helios project allow to integrate the functionality and use it without installing the server part. The following instructions will overview how to integrate the functionality so to use it.  </p>
+<p>The Helios project allow to integrate the functionality and use it without installing the server part. The following instructions will overview how to integrate the functionality so to use it.</p>
 
 ### File Transfer:
 Thanks to the TUS server, a user can upload content from the mobile phone to the personal storage. The upload can be paused and resumed if needed. The default configuration is:
