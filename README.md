@@ -10,6 +10,8 @@ However, connectivity networks remain fragile. Platform APIs are also often a me
 
 This funcionality is mainly based on TUS (Open and Open Source Protocol for Resumable File Uploads: https://tus.io/).
 
+Resumable means people on internet can carry on where they left off without re-uploading whole data again in case of any interruptions. An interruption may happen willingly if the user wants to pause, or by accident in case of a network issue or server outage.
+
 The main goal of it will indeed solve the problem of unreliable file uploads once and for all.
 
 As mentioned before, TUS is a quite recent open protocol (additional information could be found here: https://tus.io/protocols/resumable-upload.html) for resumable uploads built on HTTP.
