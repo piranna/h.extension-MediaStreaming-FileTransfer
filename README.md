@@ -25,6 +25,7 @@ It offers simple, cheap and reusable stacks for clients and servers. It supports
 
 
 ### Installation
+Here instructions to install the Tus server. 
 
 
 <p><b> The Helios project allow to integrate the functionality and use it without installing the server part. The following instructions will overview how to integrate the functionality so to use it.  </p>
