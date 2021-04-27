@@ -5,10 +5,15 @@ Repository for the FileTransfer of Media Streaming Module (T3.3).
 ## Short Intro to the funcionality
 
 Nowadays, on internet, users are sharing more and more multimedia contents such as photos, videos and finles every day.
+
 However, connectivity networks remain fragile. Platform APIs are also often a mess and every project builds its own file uploader.
+
 This funcionality is mainly based on TUS (Open and Open Source Protocol for Resumable File Uploads: https://tus.io/).
+
 The main goal of it will indeed solve the problem of unreliable file uploads once and for all.
+
 As mentioned before, TUS is a quite recent open protocol (additional information could be found here: https://tus.io/protocols/resumable-upload.html) for resumable uploads built on HTTP.
+
 It offers simple, cheap and reusable stacks for clients and servers. It supports any language, any platform and any network.
 
 ### File Transfer:
