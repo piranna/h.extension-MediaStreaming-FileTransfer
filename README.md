@@ -18,9 +18,8 @@ As mentioned before, TUS is a quite recent open protocol (additional information
 
 It offers simple, cheap and reusable stacks for clients and servers. It supports any language, any platform and any network.
 
-Basic Tus Architecture
-
-https://github.com/helios-h2020/h.extension-MediaStreaming-FileTransfer/blob/master/files/TUS.png?raw=true
+### Basic Tus Architecture
+https://raw.githubusercontent.com/helios-h2020/h.extension-MediaStreaming-FileTransfer/master/files/TUS.png
 
 
 ### File Transfer:
