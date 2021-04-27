@@ -24,6 +24,11 @@ It offers simple, cheap and reusable stacks for clients and servers. It supports
 
 
 
+### Installation
+
+
+<p><b> The Helios project allow to integrate the functionality and use it without installing the server part. The following instructions will overview how to integrate the functionality so to use it.  </p>
+
 ### File Transfer:
 Thanks to the TUS server, a user can upload content from the mobile phone to the personal storage. The upload can be paused and resumed if needed. The default configuration is:
 
